@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: authenticator
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432
+  username: ISAY
+  password: I23sa57y
+
+test:
+  adapter: postgresql
+  database: test
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432
+  username: ISAY
+  password: I23sa57y
