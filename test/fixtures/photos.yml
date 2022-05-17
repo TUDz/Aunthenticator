@@ -1,12 +1,18 @@
 # == Schema Information
 #
-# Table name: tweets
+# Table name: photos
 #
 #  id         :bigint           not null, primary key
-#  body       :text
-#  username   :string
+#  image_url  :string
+#  title      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-class Tweet < ApplicationRecord
-end
+
+one:
+  title: MyString
+  image_url: MyString
+
+two:
+  title: MyString
+  image_url: MyString
