@@ -1,0 +1,7 @@
+<%= form_with url: :photos do |f| %>
+  <%= f.label :title, "Ingresa un título" %>
+  <%= f.text_field :title %>
+  <%= f.label :image_url, "Ingresa la url del libro" %>
+  <%= f.url_field :image_url%>
+  <%= f.submit "Submit" %>
+<% end %>
